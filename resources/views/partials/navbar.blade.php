@@ -36,8 +36,12 @@ $links=[
                 @endforeach
         </ul>
         <form>
-            <input type="text" placeholder="Search">
-            <button type="submit">Search</button>
+            <div class="search">
+                <input type="text" placeholder="Search">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
         </form>
     </div>
 </nav>

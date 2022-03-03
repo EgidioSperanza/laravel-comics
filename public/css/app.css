@@ -9406,6 +9406,27 @@ nav .container ul li .dropdown .dropdown:hover .dropshop {
   color: #000;
 }
 
+nav .container .search {
+  border-bottom: 2px solid #0282f9;
+  padding: 2px;
+}
+
+nav .container .search input {
+  border: none;
+  box-shadow: none;
+  text-align: right;
+  font-size: 16px;
+  max-width: 80px;
+}
+
+nav .container .search button {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  margin-left: 20px;
+  font-size: 20px;
+}
+
 .jumbotron {
   height: 500px;
   background: url("/img/jumbotron.jpg") no-repeat;
@@ -9622,6 +9643,7 @@ nav .container ul li .dropdown .dropdown:hover .dropshop {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: none;
 }
 
 body {
