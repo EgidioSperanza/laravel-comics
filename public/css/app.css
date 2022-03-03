@@ -9540,7 +9540,7 @@ nav .container .search button {
 }
 
 .footer-link {
-  height: 400px;
+  height: 470px;
   background: url("/img/footer-bg.jpg");
   background-size: cover;
 }
@@ -9554,25 +9554,45 @@ nav .container .search button {
 
 .footer-link .footer-link-inner .link-box {
   width: 50%;
-  padding: 20px 50px 20px 0;
+  padding: 20px 20px 20px 0;
+}
+
+.footer-link .footer-link-inner .link-box p.copy {
+  margin-top: 20px;
+}
+
+.footer-link .footer-link-inner .link-box p {
+  color: #889595;
+}
+
+.footer-link .footer-link-inner .link-box p a {
+  color: #0282f9;
+}
+
+.footer-link .footer-link-inner .link-box p a:hover {
+  color: #FFF;
+}
+
+.footer-link .footer-link-inner .link-box .link-box-col {
   display: flex;
   justify-content: space-between;
 }
 
-.footer-link .footer-link-inner .link-box h3 {
+.footer-link .footer-link-inner .link-box .link-box-col h3 {
   text-transform: uppercase;
   color: #fff;
   margin: 20px 0;
 }
 
-.footer-link .footer-link-inner .link-box li {
+.footer-link .footer-link-inner .link-box .link-box-col li {
   color: #889595;
+  list-style: none;
   margin-bottom: 5px;
   cursor: pointer;
 }
 
-.footer-link .footer-link-inner .link-box li:hover {
-  color: #FFF;
+.footer-link .footer-link-inner .link-box .link-box-col li:hover {
+  color: #fff;
 }
 
 .footer-link .footer-link-inner .footer-logo {
@@ -9580,6 +9600,10 @@ nav .container .search button {
   height: 100%;
   background: url("/img/dc-logo-bg.png") no-repeat;
   background-position: center;
+}
+
+.footer-link .footer-copy {
+  width: 50%;
 }
 
 .footer-social {
