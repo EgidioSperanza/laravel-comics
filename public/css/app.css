@@ -72,16 +72,6 @@
   color: #000;
 }
 
-nav {
-  /* Dropdown Button */
-  /* The container <div> - needed to position the dropdown content */
-  /* Dropdown Content (Hidden by Default) */
-  /* Links inside the dropdown */
-  /* Change color of dropdown links on hover */
-  /* Show the dropdown menu on hover */
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-}
-
 nav .container {
   display: flex;
   align-items: center;
@@ -93,7 +83,7 @@ nav .container {
 }
 
 nav .container img {
-  height: 90px;
+  height: 80px;
 }
 
 nav .container ul {
@@ -111,11 +101,14 @@ nav .container ul li {
 }
 
 nav .container ul li:hover {
-  position: relative;
   color: #0282f9;
 }
 
-nav .container ul li:hover::before {
+nav .container ul li:hover:not(.dropdown) {
+  position: relative;
+}
+
+nav .container ul li:hover:not(.dropdown)::before {
   content: "";
   position: absolute;
   left: 10%;
@@ -139,19 +132,18 @@ nav .container ul li.active::before {
   background-color: #0282f9;
 }
 
-nav .dropbtn {
-  background-color: transparent;
-  color: white;
-  text-transform: uppercase;
-  border: none;
-}
-
-nav .dropdown {
+nav .container ul li .dropdown {
   position: relative;
   display: inline-block;
 }
 
-nav .dropdown-content {
+nav .container ul li .dropdown .dropshop {
+  color: #000;
+  text-transform: uppercase;
+  border: none;
+}
+
+nav .container ul li .dropdown .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f1f1f1;
@@ -160,22 +152,22 @@ nav .dropdown-content {
   z-index: 1;
 }
 
-nav .dropdown-content a {
+nav .container ul li .dropdown .dropdown-content a {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
 }
 
-nav .dropdown-content a:hover {
+nav .container ul li .dropdown .dropdown-content a:hover {
   background-color: #ddd;
 }
 
-nav .dropdown:hover .dropdown-content {
+nav .container ul li .dropdown .dropdown:hover .dropdown-content {
   display: block;
 }
 
-nav .dropdown:hover .dropbtn {
+nav .container ul li .dropdown .dropdown:hover .dropshop {
   color: #000;
 }
 

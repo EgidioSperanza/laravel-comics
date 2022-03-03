@@ -7,8 +7,8 @@ nav {
     width: 80%;
     max-width: 1200px;
     height: 100px;
-    img{
-      height:90px;
+    img {
+      height: 80px;
     }
     ul {
       height: 100%;
@@ -21,8 +21,10 @@ nav {
         align-items: center;
         margin: 0 5px;
         &:hover {
-          position: relative;
           color: $primary-link-color;
+        }
+        &:hover:not(.dropdown) {
+          position: relative;
           &::before {
             content: '';
             position: absolute;
@@ -45,54 +47,48 @@ nav {
             background-color: $primary-link-color;
           }
         }
+        .dropdown {
+          position: relative;
+          display: inline-block;
+          .dropshop {
+            color:#000;
+            text-transform: uppercase;
+            border: none;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f1f1f1;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+          .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+          }
+          .dropdown-content a:hover {
+            background-color: #ddd;
+          }
+
+          .dropdown:hover .dropdown-content {
+            display: block;
+          }
+
+          .dropdown:hover .dropshop {
+            color: #000;
+          }
+        }
       }
     }
   }
-  /* Dropdown Button */
- .dropbtn {
-  background-color: transparent;
-  color: white;
-  text-transform: uppercase;
-  border: none;
-}
-
-/* The container <div> - needed to position the dropdown content */
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-
-/* Dropdown Content (Hidden by Default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-/* Change color of dropdown links on hover */
-.dropdown-content a:hover {background-color: #ddd;}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {display: block;}
-
-/* Change the background color of the dropdown button when the dropdown content is shown */
-.dropdown:hover .dropbtn {color: #000;} 
 }
 
 .jumbotron {
-    height: 500px;
-    background: url("/img/jumbotron.jpg") no-repeat;
-    background-position: top center;
-    background-size: cover;
-  }
+  height: 500px;
+  background: url('/img/jumbotron.jpg') no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
