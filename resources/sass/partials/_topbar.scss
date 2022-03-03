@@ -1,0 +1,17 @@
+.topbar {
+  background-color: $primary-link-color;
+  text-transform: uppercase;
+  color: #FFF;
+  .container{
+    margin: 0 auto;
+    width: 80%;
+    height: 30px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .dropdown{
+      margin-left:60px
+    }
+  }
+}
