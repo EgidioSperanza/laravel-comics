@@ -25,7 +25,7 @@ $links=[
                 </li>
                 @else
                 <li class="dropdown">
-                    <p class="dropshop">{{$link}}</p>
+                    <p class="dropshop">{{$link}} <i class="fa-solid fa-caret-down"></i></p>
                     <div class="dropdown-content">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>

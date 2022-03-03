@@ -54,6 +54,8 @@ nav {
             color:#000;
             text-transform: uppercase;
             border: none;
+            display: flex;
+            align-items: center;
           }
           .dropdown-content {
             display: none;
