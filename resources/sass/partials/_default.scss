@@ -7,17 +7,24 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
-a:link, a:hover{
-    text-decoration: none;
+a:link,
+a:visited {
+  color: #000;
+  text-decoration: none;
 }
 
-a:visited{
-    color: $primary-link-color;
+a:hover {
+  color: $primary-link-color;
+  text-decoration: none;
 }
 
-main{
+main {
   color: #fff;
   background-color: #333;
   padding: 20px 0 30px;
   text-align: center;
+}
+
+.box {
+  margin: 200px 0;
 }

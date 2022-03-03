@@ -2,7 +2,7 @@
 
 @section('pageTitle', 'Comics')
 
-@section('comicsList')
+@section('main')
     @include ('partials.comicList')
 @endsection
 

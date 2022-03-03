@@ -3,5 +3,5 @@
 @section('pageTitle', 'Home')
 
 @section('main')
-    <h1 class="box">PAGINA DEI PERSONAGGI</h1>
+    <h1 class="box">PAGINA DELLE SERIE TV</h1>
 @endsection

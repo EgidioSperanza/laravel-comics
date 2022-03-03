@@ -72,6 +72,16 @@
   color: #000;
 }
 
+nav {
+  /* Dropdown Button */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu on hover */
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+}
+
 nav .container {
   display: flex;
   align-items: center;
@@ -127,6 +137,46 @@ nav .container ul li.active::before {
   bottom: 0px;
   height: 6px;
   background-color: #0282f9;
+}
+
+nav .dropbtn {
+  background-color: transparent;
+  color: white;
+  text-transform: uppercase;
+  border: none;
+}
+
+nav .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+nav .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+nav .dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+nav .dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+nav .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+nav .dropdown:hover .dropbtn {
+  color: #000;
 }
 
 .jumbotron {
@@ -241,6 +291,49 @@ nav .container ul li.active::before {
   padding-left: 20px;
 }
 
+.footer-link {
+  height: 400px;
+  background: url("/img/footer-bg.jpg");
+  background-size: cover;
+}
+
+.footer-link .footer-link-inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+}
+
+.footer-link .footer-link-inner .link-box {
+  width: 50%;
+  padding: 20px 50px 20px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-link .footer-link-inner .link-box h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 20px 0;
+}
+
+.footer-link .footer-link-inner .link-box li {
+  color: #889595;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.footer-link .footer-link-inner .link-box li:hover {
+  color: #FFF;
+}
+
+.footer-link .footer-link-inner .footer-logo {
+  width: 50%;
+  height: 100%;
+  background: url("/img/dc-logo-bg.png") no-repeat;
+  background-position: center;
+}
+
 .footer-social {
   background-color: #333;
 }
@@ -309,12 +402,14 @@ body {
 }
 
 a:link,
-a:hover {
+a:visited {
+  color: #000;
   text-decoration: none;
 }
 
-a:visited {
+a:hover {
   color: #0282f9;
+  text-decoration: none;
 }
 
 main {
@@ -322,5 +417,9 @@ main {
   background-color: #333;
   padding: 20px 0 30px;
   text-align: center;
+}
+
+.box {
+  margin: 200px 0;
 }
 

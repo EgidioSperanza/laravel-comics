@@ -14,7 +14,7 @@
     </header>
 
     <main>
-        @yield('comicsList')
+        @yield('main')
     </main>
 
     <footer>
