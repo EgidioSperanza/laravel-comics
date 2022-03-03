@@ -1,15 +1,15 @@
 @php
 $links=[
-'characters',
-'comics',
-'movies',
-'tv',
-'games',
-'collectibles',
-'videos',
-'fans',
-'news',
-'shop' ];
+'characters'=>'characters',
+'comics'=>'comics',
+'movies'=>'movies',
+'tv'=>'tv',
+'games'=>'games',
+'collectibles'=>'collectibles',
+'videos'=>'videos',
+'fans'=>'fans',
+'news'=>'news',
+'shop'=>'shop' ];
 @endphp
 @include ('partials.topbar')
 <nav>
@@ -18,9 +18,9 @@ $links=[
       <img src="{{asset('img/dc-logo.png')}}" alt="DC Logo" />
     </a>
       <ul>
-        @foreach ($links as $link)
+        @foreach ($links as $key=>$link)
           <li>
-            <a href="#">{{$link}}</a>
+            <a href="{{route($key)}}">{{$link}}</a>
           </li>
         @endforeach
       </ul>

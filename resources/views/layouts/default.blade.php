@@ -13,6 +13,10 @@
         @include ('partials.navbar')
     </header>
 
+    <main>
+        @yield('comicsList')
+    </main>
+
     <footer>
     @include('partials.footer')
     </footer>

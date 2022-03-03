@@ -10,3 +10,14 @@ body {
 a:link, a:hover{
     text-decoration: none;
 }
+
+a:visited{
+    color: $primary-link-color;
+}
+
+main{
+  color: #fff;
+  background-color: #333;
+  padding: 20px 0 30px;
+  text-align: center;
+}

@@ -1,5 +1,4 @@
 nav {
-    padding: 20px;
   .container {
     display: flex;
     align-items: center;
@@ -8,6 +7,9 @@ nav {
     width: 80%;
     max-width: 1200px;
     height: 100px;
+    img{
+      height:90px;
+    }
     ul {
       height: 100%;
       text-transform: uppercase;
