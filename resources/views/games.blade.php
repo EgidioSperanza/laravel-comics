@@ -1,6 +1,6 @@
 @extends('layouts.default')
 
-@section('pageTitle', 'Home')
+@section('pageTitle', 'Games')
 
 @section('main')
     <h1 class="box">PAGINA DEI VIDEOGHIOCHI</h1>
