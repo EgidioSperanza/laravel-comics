@@ -2,13 +2,14 @@
   text-transform: uppercase;
   color: #000 !important;
 }
-.nav-link:hover {
+.nav-link:hover, .nav-link.active {
   color: $primary-link-color !important;
 }
-.nav-link:hover:not(.dropdown-toggle) {
+.nav-link:hover:not(.dropdown-toggle),.nav-link.active {
   position: relative !important;
 }
-.nav-link:hover:not(.dropdown-toggle)::before {
+.nav-link:hover:not(.dropdown-toggle)::before,
+.nav-link.active::before {
   content: '';
   position: absolute;
   left: 10%;

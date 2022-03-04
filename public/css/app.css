@@ -21501,15 +21501,18 @@ p.visa {
   color: #000 !important;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link.active {
   color: #0282f9 !important;
 }
 
-.nav-link:hover:not(.dropdown-toggle) {
+.nav-link:hover:not(.dropdown-toggle),
+.nav-link.active {
   position: relative !important;
 }
 
-.nav-link:hover:not(.dropdown-toggle)::before {
+.nav-link:hover:not(.dropdown-toggle)::before,
+.nav-link.active::before {
   content: "";
   position: absolute;
   left: 10%;
