@@ -1,17 +1,30 @@
-.topbar {
+.topbar{
   background-color: $primary-link-color;
   text-transform: uppercase;
   color: #FFF;
-  .container{
-    margin: 0 auto;
-    width: 80%;
-    height: 30px;
-    max-width: 1200px;
-    display: flex;
-    align-items: center;
+}
+.topbar >.container{
+  max-width: $inner-container-width;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dropdown{
+  margin-right:10px;
+}
+.topbar p{
+  margin:0;
+}
+p.visa{
+  margin-left:10px;
+}
+
+@media screen and (min-width: 1200px){
+  .topbar>.container{
     justify-content: end;
-    .dropdown{
-      margin-left:60px
-    }
+  }
+  .dropdown{
+    margin-left:60px
   }
 }

@@ -1,57 +1,94 @@
-.footer-link {
-  height: 470px;
-  background: url('/img/footer-bg.jpg');
+.links {
+  width: 100%;
+  min-height: 500px;
+  background: url('/img/footer-bg.jpg') no-repeat center center;
   background-size: cover;
+  color: $footer-link-color;
+}
+.footer-logo {
+  background: url('/img/dc-logo-bg.png') no-repeat center center;
+  background-size: cover;
+  height: 500px;
+}
 
-  .footer-link-inner {
-    width: $inner-container-width;
-    height: 100%;
-    margin: 0 auto;
-    display: flex;
+.link-list > ul > li {
+  cursor: pointer;
+}
+.link-list > ul > li:hover {
+  color: #fff;
+}
 
-    .link-box {
-      width: 50%;
-      padding: 20px 20px 20px 0;
-      p.copy {
-        margin-top: 20px;
-      }
-      p {
-        color: $footer-link-color;
-        a {
-          color: $primary-link-color;
-          &:hover{
-            color: #FFF;
-          }
-        }
-      }
-      .link-box-col {
-        display: flex;
-        justify-content: space-between;
-        h3 {
-          text-transform: uppercase;
-          color: #fff;
-          margin: 20px 0;
-        }
+.links h3 {
+  text-transform: uppercase;
+  color: #fff;
+  margin: 20px 0;
+}
 
-        li {
-          color: $footer-link-color;
-          list-style: none;
-          margin-bottom: 5px;
-          cursor: pointer;
-          &:hover {
-            color: #fff;
-          }
-        }
-      }
-    }
-    .footer-logo {
-      width: 50%;
-      height: 100%;
-      background: url('/img/dc-logo-bg.png') no-repeat;
-      background-position: center;
-    }
-  }
-  .footer-copy {
-    width: 50%;
+.copy p {
+  margin: 20px 0 0;
+}
+
+.copy > p > a , .copy > span > a{
+  color: $primary-link-color;
+  &:hover {
+    color: #fff;
   }
 }
+
+// .footer-link {
+//   height: 470px;
+//   background: url('/img/footer-bg.jpg');
+//   background-size: cover;
+
+//   .footer-link-inner {
+//     width: $inner-container-width;
+//     height: 100%;
+//     margin: 0 auto;
+//     display: flex;
+
+//     .link-box {
+//       width: 50%;
+//       padding: 20px;
+//       p.copy {
+//         margin-top: 20px;
+//       }
+//       p {
+//         color: $footer-link-color;
+//         a {
+//           color: $primary-link-color;
+//           &:hover{
+//             color: #FFF;
+//           }
+//         }
+//       }
+//       .link-box-col {
+//         display: flex;
+//         justify-content: space-between;
+//         h3 {
+//           text-transform: uppercase;
+//           color: #fff;
+//           margin: 20px 0;
+//         }
+
+//         li {
+//           color: $footer-link-color;
+//           list-style: none;
+//           margin-bottom: 5px;
+//           cursor: pointer;
+//           &:hover {
+//             color: #fff;
+//           }
+//         }
+//       }
+//     }
+//     .footer-logo {
+//       width: 50%;
+//       height: 100%;
+//       background: url('/img/dc-logo-bg.png') no-repeat;
+//       background-position: center;
+//     }
+//   }
+//   .footer-copy {
+//     width: 50%;
+//   }
+// }

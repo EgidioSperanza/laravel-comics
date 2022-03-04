@@ -1,50 +1,30 @@
-.footer-shop {
-    background-color: $primary-link-color;
-    display: flex;
-    justify-content: space-between;
-    ul {
-      width: $inner-container-width;
-      margin: 0 auto;
-      display: flex;
-      justify-content: space-between;
-  
-      li {
-        height: 150px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-  
-        &:hover {
-          position: relative;
-        }
-        &:hover:before{
-          content: "";
-              position: absolute;
-              left: 10%;
-              right: 10%;
-              top: 0;
-              height: 4px;
-              background-color: #fff;
-        }
-        &:hover:after{
-          content: "";
-              position: absolute;
-              left: 10%;
-              right: 10%;
-              bottom: 0;
-              height: 4px;
-              background-color: #fff;
-        }
-        img {
-          height: 60px;
-        }
-  
-        span {
-          text-transform: uppercase;
-          color: $footer-ico-link-color;
-          padding-left: 20px;
-        }
-      }
-    }
-  }
-  
+.shop {
+  background-color: $primary-link-color;
+  color: #fff;
+  min-height: 150px;
+  display: flex;
+  align-items: center;
+}
+.shop > .container {
+  height: 100%;
+}
+.img-shop {
+  height: 60px;
+  width: 60px;
+}
+.img-shop > img:not(.visa-card) {
+  height: 100%;
+  object-fit: contain;
+}
+.img-shop > img.visa-card {
+  width: 100%;
+  object-fit: cover;
+}
+.shop-el {
+  height: 150px;
+  cursor: pointer;
+}
+.shop-el:hover {
+  border-top: 4px solid #fff;
+  border-bottom: 4px solid #fff;
+}

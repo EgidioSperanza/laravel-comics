@@ -4,13 +4,17 @@
 @import "~@fortawesome/fontawesome-free/scss/regular";
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/brands";
+// bootstrap
+@import "node_modules/bootstrap/scss/bootstrap";
 
 @import './partials/variables';
 @import './partials/topbar';
 @import './partials/dropdown';
 @import './partials/nav';
+@import './partials/jumbotron';
 @import './partials/comicList';
 @import './partials/shop';
 @import './partials/links';
 @import './partials/socials';
 @import './partials/default';
+

@@ -1,114 +1,39 @@
-nav {
-  .container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 80%;
-    max-width: 1200px;
-    height: 100px;
-    img {
-      height: 80px;
-    }
-    ul {
-      height: 100%;
-      text-transform: uppercase;
-      display: flex;
-      li {
-        height: 100%;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        margin: 0 5px;
-        &:hover {
-          color: $primary-link-color;
-        }
-        &:hover:not(.dropdown) {
-          position: relative;
-          &::before {
-            content: '';
-            position: absolute;
-            left: 10%;
-            right: 10%;
-            bottom: 0px;
-            height: 6px;
-            background-color: $primary-link-color;
-          }
-        }
-        &.active {
-          position: relative;
-          &::before {
-            content: '';
-            position: absolute;
-            left: 10%;
-            right: 10%;
-            bottom: 0px;
-            height: 6px;
-            background-color: $primary-link-color;
-          }
-        }
-        .dropdown {
-          position: relative;
-          display: inline-block;
-          .dropshop {
-            color:#000;
-            text-transform: uppercase;
-            border: none;
-            display: flex;
-            align-items: center;
-          }
-          .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f1f1f1;
-            min-width: 160px;
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
-          }
-          .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
-            text-decoration: none;
-            display: block;
-          }
-          .dropdown-content a:hover {
-            background-color: #ddd;
-          }
-
-          .dropdown:hover .dropdown-content {
-            display: block;
-          }
-
-          .dropdown:hover .dropshop {
-            color: #000;
-          }
-        }
-      }
-    }
-    .search{
-      border-bottom:2px solid $primary-link-color;
-      padding: 2px;
-      input{
-        border:none;
-        box-shadow: none;
-        text-align: right;
-        font-size: 16px;
-        max-width: 80px;
-      }
-      button{
-        border:none;
-        box-shadow: none;
-        background-color: transparent;
-        margin-left: 20px;
-        font-size: 20px;
-      }
-    }
-  }
+.nav-link {
+  text-transform: uppercase;
+  color: #000 !important;
+}
+.nav-link:hover {
+  color: $primary-link-color !important;
+}
+.nav-link:hover:not(.dropdown-toggle) {
+  position: relative !important;
+}
+.nav-link:hover:not(.dropdown-toggle)::before {
+  content: '';
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  bottom: -44px;
+  height: 6px;
+  background-color: $primary-link-color;
+}
+nav form {
+  border-bottom: 2px solid $primary-link-color;
+  padding: 2px;
+}
+nav input {
+  border: none;
+  box-shadow: none;
+  text-align: right;
+  font-size: 16px;
+  max-width: 80px;
+}
+nav input:focus {
+  outline: none;
 }
 
-.jumbotron {
-  height: 500px;
-  background: url('/img/jumbotron.jpg') no-repeat;
-  background-position: top center;
-  background-size: cover;
+.custom-btn {
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
 }

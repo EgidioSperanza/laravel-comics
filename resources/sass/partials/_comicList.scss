@@ -1,44 +1,28 @@
-.main-inner {
-  width: $inner-container-width;
-  margin: 0 auto;
-  margin-bottom: 20px;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  position: relative;
-
   .current-series {
     position: absolute;
-    padding: 10px 20px;
-    margin: -40px -10px;
+    padding: 10px 30px;
+    top: -40px;
+    left: -20px;
     text-transform: uppercase;
     background-color: $primary-link-color;
   }
-
-  .comic-card {
-    width: calc(($inner-container-width / 6) - 20px);
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    cursor: pointer;
-
-    .comic-cover {
-      width: 100%;
-      height: calc(($inner-container-width / 6) - 20px);
-      overflow: hidden;
-
-      img {
-        width: 100%;
-      }
-    }
-
-    span {
-      margin: 20px 0;
-      text-transform: uppercase;
-    }
-  }
+.current-series >h3{
+  margin: 0;
 }
+
+.card {
+  border: none;
+}
+
+.preview {
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-title {
+  text-transform: uppercase;
+}
+
 .more-comics {
   margin: 0 auto;
   padding: 10px 40px;
